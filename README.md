@@ -295,7 +295,7 @@
 * 继承关系自身缺点, 如果父类添加新的抽象方法, 所有子类都要改一遍
 ### coding
 ![](./assets/README-1611221489054.png)
-* [示例](src/main/java/com/louye/design/behavior/templatemethod/Test.java)
+* [示例](sr 0c/main/java/com/louye/design/behavior/templatemethod/Test.java)
 ## 迭代器模式
 ### 概念
 * 定义: 提供一种方法, 顺序访问一个集合中的各个元素, 而又不暴露对象的内部表示
@@ -307,3 +307,18 @@
 * 分离了集合对象的遍历行为
 ### 缺点
 * 类的个数成对增加
+### coding
+![](./assets/README-1611287528215.png)
+## 策略模式
+### 概念
+* 定义: 定义了算法家族, 分别封装起来, 让他们之间可以互相替换, 此模式让算法的变化不会影响到使用算法的用户.
+类型: 行为型
+### 适用场景
+1. 系统有很多类, 而他们的区别仅仅在于他们的行为不同
+2. 一个系统需要动态的在几种算法中进行选择一种
+### coding
+![](./assets/README-1611543742734.png)
+* [示例](src/main/java/com/louye/design/strategy/Test.java)
+* 策略模式在JDK中的应用: Comparator比较器就是一个抽象的策略
+#### 工厂模式和策略模式的整合
+![](./assets/README-1611582335281.png)
